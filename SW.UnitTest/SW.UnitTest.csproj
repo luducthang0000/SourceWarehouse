@@ -53,6 +53,28 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SW.Common\SW.Common.csproj">
+      <Project>{fcbd94d2-ec00-4a7f-96f9-f691277000e6}</Project>
+      <Name>SW.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SW.Data\SW.Data.csproj">
+      <Project>{56f0361e-76ed-4ad6-98f7-137d81ff9311}</Project>
+      <Name>SW.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SW.Model\SW.Model.csproj">
+      <Project>{3ed16b46-f5c8-4fc2-baaf-d1b9ac5dc5e9}</Project>
+      <Name>SW.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SW.Service\SW.Service.csproj">
+      <Project>{3b3d459e-81dc-4ca5-8f91-3e2460a9dd24}</Project>
+      <Name>SW.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SW.Web\SW.Web.csproj">
+      <Project>{6fc5c4d7-fae1-4819-80a4-129a14986c05}</Project>
+      <Name>SW.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

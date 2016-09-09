@@ -42,6 +42,20 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SW.Common\SW.Common.csproj">
+      <Project>{fcbd94d2-ec00-4a7f-96f9-f691277000e6}</Project>
+      <Name>SW.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SW.Data\SW.Data.csproj">
+      <Project>{56f0361e-76ed-4ad6-98f7-137d81ff9311}</Project>
+      <Name>SW.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SW.Model\SW.Model.csproj">
+      <Project>{3ed16b46-f5c8-4fc2-baaf-d1b9ac5dc5e9}</Project>
+      <Name>SW.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
