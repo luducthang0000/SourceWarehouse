@@ -12,11 +12,12 @@ namespace SW.Model.Models
     public class ProductTag
     {
         [Key]
+        [Column(Order = 1)]
         public int ProductID { get; set; }
         [Key]
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "varchar", Order = 2)]
         [MaxLength(64)]
-        public int TagID { get; set; }
+        public string TagID { get; set; }
         [ForeignKey("ProductID")]
         public virtual Product Product { get; set; }
         [ForeignKey("TagID")]
