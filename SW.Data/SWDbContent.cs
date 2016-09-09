@@ -1,5 +1,11 @@
-﻿using SW.Model.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Data.Entity;
+using SW.Model.Models;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace SW.Data
 {
@@ -27,10 +33,10 @@ namespace SW.Data
         public DbSet<SystemConfig> SystemConfigs { set; get; }
         public DbSet<Tag> Tags { set; get; }
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
-        
+
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-
+            builder.Conventions.Remove<PluralizingTableNameConvention>();
         }
     }
 }
