@@ -12,12 +12,11 @@ namespace SW.Model.Models
     public class PostTag
     {
         [Key]
-        [Column(Order = 1)]
         public int PostID { get; set; }
         [Key]
-        [Column(TypeName = "varchar", Order = 2)]
+        [Column(TypeName = "varchar")]
         [MaxLength(64)]
-        public string TagID { get; set; }
+        public int TagID { get; set; }
         [ForeignKey("PostID")]
         public virtual Post Post { get; set; }
         [ForeignKey("TagID")]
