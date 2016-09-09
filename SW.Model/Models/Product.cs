@@ -22,7 +22,8 @@ namespace SW.Model.Models
         public string Alias { get; set; }
         [MaxLength(512)]
         public string Image { get; set; }
-        public XElement MoreImages { get; set; }
+        [Column(TypeName = "xml")]
+        public string MoreImages { get; set; }
         public decimal Price { get; set; }
         public decimal? PromotionPrice { get; set; }
         public int? Waranty { get; set; }

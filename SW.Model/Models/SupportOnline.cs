@@ -26,7 +26,6 @@ namespace SW.Model.Models
         public string Email { get; set; }
         [MaxLength(256)]
         public string Facebook { get; set; }
-        [MaxLength(256)]
         public bool Status { get; set; }
         public int? DisplayOrder { get; set; }
     }
